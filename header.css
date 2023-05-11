@@ -1,0 +1,365 @@
+/*   HEADER CSS   */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.header_inner {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 4px 15px 2px;
+  position: relative;
+}
+
+header .top .gnb {
+  display: flex;
+}
+
+header .top .gnb i {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 9px 9px;
+}
+
+header .top .gnb .search {
+  display: flex;
+  align-items: center;
+}
+
+header .top .gnb .search .search_area {
+  display: none;
+}
+
+header .top .gnb .search.active .search_area {
+  display: block;
+}
+
+header .top .gnb .search .search_area input {
+  height: 31px;
+  letter-spacing: 0.5px;
+  padding: 1px 10px 0;
+}
+
+header .top .gnb .search .search_area input:focus {
+  outline-color: #333;
+}
+
+header .top .gnb .search .search_area button {
+  font-size: 10px;
+  padding: 7px 9px 6px;
+  height: 33px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+header .top .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 195px;
+}
+
+header .top .links a {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  padding: 6px 12px;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  margin-right: 7px;
+  transition: all 0.6s ease 0s;
+}
+
+header .top .links a:hover {
+  border: 1px solid rgb(50, 104, 145);
+  background-color: rgb(50, 104, 145);
+}
+
+header .top nav {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  z-index: 101;
+  width: 190px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 1px;
+  border-radius: 3px;
+  padding: 10px 18px;
+}
+
+header .top nav.active {
+  left: 0;
+}
+
+header .top nav ul {
+  padding: 8px 0;
+  border-bottom: 2px solid #eee;
+}
+
+header .top nav ul:last-child {
+  border-bottom: none
+}
+
+header .top nav li {
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+header .top nav > ul > li {
+  position: relative;
+}
+
+header .top .nav_list {
+  position: absolute;
+  right: -124%;
+  top: -10px;
+  z-index: 102;
+  width: 200px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.09) -1px 4px 6px;
+  padding: 10px 18px;
+  display: none;
+}
+
+header .top .nav_list.long {
+  top: unset;
+  bottom: -10px;
+}
+
+header .top .nav_list::after {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 12px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  border-image: initial;
+  border-width: 16px;
+}
+
+header .top .nav_list.long::after {
+  top: unset;
+  bottom: 12px;
+}
+
+header .top .nav_list::before {
+  content: '';
+  border-style: solid;
+  border-color: transparent rgb(204, 204, 204) transparent transparent;
+  border-image: initial;
+  border-width: 16px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -33px;
+  top: 12px;
+}
+
+header .top .nav_list.long::before {
+  top: unset;
+  bottom: 12px;
+}
+
+header .top .nav_list h3 {
+  color: rgb(153, 153, 153);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 7px 7px 0 7px;
+  text-transform: uppercase;
+}
+
+header .top .nav_list li {
+  padding: 7px;
+}
+
+header .top .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+header .bottom {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+header .bottom .logo_bottom img {
+  width: 96px;
+}
+
+header .bottom .info {
+  position: relative;
+}
+
+header .bottom .info span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #444;
+  font-weight: 700;
+}
+
+header .bottom .info .tooltip {
+  position: absolute;
+  left: 50%;
+  top: 170%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 280px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333333b5;
+  padding: 20px;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+header .bottom .info.active .tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+
+header .bottom .info .tooltip::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 30px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #3333339a;
+}
+
+header .bottom .share {
+  position: relative;
+}
+
+header .bottom .share span {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header .bottom .share span i {
+  font-size: 18px;
+  vertical-align: top;
+}
+
+header .bottom .share .share_list {
+  position: absolute;
+  top: 45px;
+  right: -9px;
+  z-index: 99;
+  width: 215px;
+  background: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
+  border-radius: 4px;
+  padding: 14px;
+  display: none;
+}
+
+header .bottom .share.active .share_list {
+  display: block;
+}
+
+header .bottom .share .share_list::after {
+  content: '';
+  position: absolute;
+  border-width: 10px 10px 11px;
+  border-style: inset inset solid;
+  border-color: transparent transparent rgb(255, 255, 255);
+  height: 0;
+  width: 0;
+  right: 15px;
+  top: -20px;
+}
+
+header .bottom .share .share_list::before {
+  content: '';
+  position: absolute;
+  border-width: 10px 10px 11px;
+  border-style: inset inset solid;
+  border-color: transparent transparent rgb(204, 204, 204);
+  height: 0;
+  width: 0;
+  right: 15px;
+  top: -22px;
+}
+
+header .bottom .share .share_list h6 {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+header .bottom .share .share_list li {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+header .bottom .share .share_list li:last-child {
+  border-bottom: none;
+}
+
+header .bottom .share .share_list li i {
+  font-size: 18px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50%;
+  padding: 4px;
+  display: inline-block;
+  margin-right: 16px;
+}
