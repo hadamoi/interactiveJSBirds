@@ -57,6 +57,7 @@ const animationImages = document.querySelectorAll('.animation > img');
 const BIRD01_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_01 .animation > img');
 const BIRD02_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > img');
 const BIRD02_VIDEO = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > video');
+const BIRD03_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_03 .animation > img');
 
 window.addEventListener('mousemove', function(e){
   x = e.pageX - this.window.innerWidth / 2;
@@ -86,9 +87,17 @@ const loop = () => {
   BIRD02_IMAGES[3].style.transform = `translateX(${targetX / 34}px) translateY(${-targetY / 46}px)`;
   BIRD02_IMAGES[4].style.transform = `translateX(${-targetX / 43}px) translateY(${targetY / 65}px)`;
   BIRD02_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
-  
+
   //bird_02 video
   BIRD02_VIDEO[0].style.transform = `translateX(${-targetX / 56 }px) translateY(${-targetY / 76}px)`;
+
+  //bird_02 images
+  BIRD03_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 133}px)`;
+  BIRD03_IMAGES[1].style.transform = `translateX(${targetX / 132}px) translateY(${-targetY / 148}px)`;
+  BIRD03_IMAGES[2].style.transform = `translateX(${-targetX / 155}px) translateY(${targetY / 136}px)`;
+  BIRD03_IMAGES[3].style.transform = `translateX(${targetX / 234}px) translateY(${-targetY / 66}px)`;
+  BIRD03_IMAGES[4].style.transform = `translateX(${-targetX / 143}px) translateY(${targetY / 65}px)`;
+  BIRD03_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
 
   window.requestAnimationFrame(loop);
 

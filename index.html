@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>PAID POST by Allbirds</title>
-    <!-- xeicon CSS CDN -->
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- // AOS CSS CDN -->
+
+    <!-- XEICON CSS CDN -->
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <!-- // xeicon CSS CDN -->
+    <!-- // XEICON CSS CDN -->
+
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- JQUERY JS CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- // JQUERY JS CDN -->
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- // AOS JS CDN -->
+
     <script defer src="custom.js"></script>
   </head>
   <body>
@@ -477,6 +491,7 @@
       </section>
 
       <section class="pageSecond">
+        <div class="pageSecond_overlay" data-aos="fade" data-aos-duration="1500"></div>
         <div class="second_inner">
 
           <!-- bird_01 -->
@@ -565,7 +580,7 @@
               <div class="description">
                 <h2>
                   Scarlet Tanagers <br />
-                  Protect Our Forests
+                  <em>Protect Our Forests</em>
                 </h2>
 
                 <p>
@@ -588,7 +603,7 @@
                 <div class="mini_table">
                   <div>
                     <img src="images/bg_100_02.png" />
-                    <span>94%</span>
+                    <span>94<em>%</em></span>
                   </div>
                   <div>
                     <p>
@@ -632,7 +647,7 @@
               <div class="description">
                 <h2>
                   Pygmy Nuthatches <br>
-                  Curb Greenhouse Gases
+                  <em>Curb Greenhouse Gases</em>
                 </h2>
 
                 <p>
@@ -642,7 +657,7 @@
                 <div class="mini_table">
                   <div>
                     <img src="images/bg_100_03.png" />
-                    <span>75%</span>
+                    <span>75<em>%</em></span>
                   </div>
                   <div>
                     <p>
@@ -679,10 +694,68 @@
             </div>
           </div>
           <!-- // bird_03 -->
+
+          <!-- bird_04 -->
+          <div class="birds_item_wrap bird_02 bird_04">
+            <div class="birds_item">
+              <div class="description">
+                <h2>
+                  Allen’s Hummingbirds <br>
+                  <em>Spread Flowers</em>
+                </h2>
+
+                <p>
+                  The smallest bird of the bunch is the Allen’s Hummingbird. You may find this tiny brown and green creature flitting about in western California’s brushy canyons and parks. It spends winters in the mountain forests of Mexico, and eats nectar from flowers such as columbine, Indian paintbrush, penstemon and twinflower. If you’re lucky enough to encounter one, you’ll be astounded by the elegant way they hover in mid-air above their favorite flowers, sipping nectar.
+                </p>
+
+                <div class="mini_table">
+                  <div>
+                    <img src="images/bg_100_04.png" />
+                    <span>2</span>
+                  </div>
+                  <div>
+                    <p>
+                      The Allen’s Hummingbird lays only two eggs per clutch, which means they reproduce at a slower rate than other birds.
+                    </p>
+                  </div>
+                </div>
+
+                <p>
+                  The Allen’s Hummingbird is severely affected by climate change, as heatwaves, drought and forest fires destroy its natural California habitat. A number of rare lilies are pollinated almost exclusively by the Allen’s Hummingbird. So if this bright, shiny bird goes away? Some of our most stunning flowers could fade into oblivion.
+                </p>
+              </div>
+              <div class="animation">
+                <div class="fixed_image">
+                  <span class="number">04</span>
+                  <img class="bg" src="images/bird-4-0d32ef52.png" />
+                  <img class="object" src="images/1-6afa0a2f.png" alt="" />
+                </div>
+                <img class="img01" src="images/2-fb5c232c.png" alt="" />
+                <video
+                  class="video02"
+                  src="images/birds_video_05.webm"
+                  muted
+                  loop
+                  autoplay
+                ></video>
+                <img class="img02" src="images/4-e7a85b91.png" alt="" />
+                <img class="img03" src="images/5-bird_04.png" alt="" />
+                <img class="img04" src="images/6-daa67cd9.png" alt="" />
+                <img class="img05" src="images/7-48b5dffd.png" alt="" />
+                <img class="img06" src="images/8-0667e089.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- // bird_04 -->
           
 
         </div>
       </section>
     </div>
+
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

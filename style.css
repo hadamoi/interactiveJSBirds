@@ -59,6 +59,12 @@ em {
   font-style: normal;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+  color: rgb(51, 51, 51);
+}
+
 /*  // RESET CSS    */
 
 /*  SECTION : pageIntro  */
@@ -106,7 +112,7 @@ em {
 .intro_inner .script_wrap {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 8%;
   width: 100%;
   height: auto;
   max-width: 1528px;
@@ -286,8 +292,7 @@ section.pageSecond {
   position: relative;
 }
 
-section.pageSecond::before {
-  content: '';
+.pageSecond_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -308,17 +313,33 @@ section.pageSecond::before {
   background: url('images/2-28b96b51.png') center center / cover no-repeat;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 {
+  background: url('images/3-101a63bf.png') center center / cover no-repeat;
+}
+
+
+/* 04 */
+.birds_item_wrap.bird_04 {
+  background: url('images/4-704acf85.png') center center / cover no-repeat;
+}
+
 .birds_item {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 8%;
 }
 
 /* 02 */
 .birds_item_wrap.bird_02 .birds_item {
   justify-content: space-between;
-  padding: 0 6%;
+  padding: 4% 6%;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .birds_item {
+  padding: 0;
 }
 
 .birds_item>div {
@@ -334,6 +355,12 @@ section.pageSecond::before {
   order: 2;
   margin-right: 0;
   padding: 0 5%;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description {
+  padding: 0;
+  padding-right: 6%;
 }
 
 .birds_item .description h2 {
@@ -355,6 +382,16 @@ section.pageSecond::before {
   color: #9e353c;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 .description h2 {
+  color: #ce703d
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description h2 {
+  color: #e0bb6d
+}
+
 .birds_item .description h2::after {
   content: '';
   position: absolute;
@@ -363,11 +400,22 @@ section.pageSecond::before {
   width: 13%;
   height: 2px;
   background-color: rgb(73, 125, 104);
+  ;
 }
 
 /* 02 */
 .birds_item_wrap.bird_02 .description h2::after {
   background-color: #9e353c;
+}
+
+/* 03 */
+.birds_item_wrap.bird_03 .description h2::after {
+  background-color: #ce703d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description h2::after {
+  background-color: #e0bb6d;
 }
 
 .birds_item .description p {
@@ -393,6 +441,18 @@ section.pageSecond::before {
   border-bottom: 1px solid #9e353c;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 .description .mini_table {
+  border-top: 1px solid #ce703d;
+  border-bottom: 1px solid #ce703d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description .mini_table {
+  border-top: 1px solid #e0bb6d;
+  border-bottom: 1px solid #e0bb6d;
+}
+
 .birds_item .description .mini_table div:first-child {
   width: 50%;
   height: 100%;
@@ -414,6 +474,16 @@ section.pageSecond::before {
 /* 02 */
 .birds_item_wrap.bird_02 .description .mini_table div:first-child::after {
   background-color: #9e353c;
+}
+
+/* 03 */
+.birds_item_wrap.bird_03 .description .mini_table div:first-child::after {
+  background-color: #ce703d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description .mini_table div:first-child::after {
+  background-color: #e0bb6d;
 }
 
 .birds_item .description .mini_table div:first-child img {
@@ -447,6 +517,16 @@ section.pageSecond::before {
   color: #9e353c;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 .description .mini_table div:first-child span {
+  color: #ce703d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description .mini_table div:first-child span {
+  color: #e0bb6d;
+}
+
 .birds_item .description .mini_table div:last-child {
   width: 50%;
   padding-left: 30px;
@@ -463,14 +543,29 @@ section.pageSecond::before {
   color: #9e353c;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 .description .mini_table div:last-child p {
+  color: #ce703d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .description .mini_table div:last-child p {
+  color: #e0bb6d;
+}
+
 .birds_item .animation {
   position: relative;
   margin-top: 28vh;
   margin-left: 6%;
 }
 
+/* animation */
 .birds_item .animation .fixed_image {
   position: relative;
+}
+
+.birds_item_wrap.bird_04 {
+  padding-left: 10%;
 }
 
 .birds_item .animation .fixed_image span.number {
@@ -480,14 +575,30 @@ section.pageSecond::before {
   color: #fff;
   opacity: 0.2;
   font-size: 38rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -1rem;
 }
 
 /* 02 */
 .birds_item_wrap.bird_02 .animation .fixed_image span.number {
   right: unset;
-  top: -53%;
-  left: -14%;
+  top: -52%;
+  left: -26%;
+  font-weight: 700;
+}
+
+/* 03 */
+.birds_item_wrap.bird_03 .animation .fixed_image span.number {
+  top: -60%;
+  right: 15%;
+}
+
+/* 04 */
+.birds_item_wrap.bird_04 .animation .fixed_image span.number {
+  left: -18%;
+  top: -56%;
+  font-weight: 600;
+  letter-spacing: -3rem;
 }
 
 .birds_item .animation .fixed_image img.bg {
@@ -504,16 +615,39 @@ section.pageSecond::before {
   padding-right: 40%;
 }
 
+/* 03 */
+.birds_item_wrap.bird_03 .animation .fixed_image img.bg {
+  padding-top: 40%;
+}
+
 .birds_item .animation .fixed_image img.object {
   position: absolute;
   left: -34%;
   top: -20%;
 }
 
+/* 02 */
+.birds_item_wrap.bird_02 .animation .fixed_image img.object {
+  top: -26%;
+}
+
+/* 03 */
+.birds_item_wrap.bird_03 .animation .fixed_image img.object {
+  top: -33%;
+  left: -22%;
+}
+
 .birds_item .animation img.img01 {
   position: absolute;
-  top: -20%;
+  top: -40%;
   left: -30%;
+}
+
+/* 02 */
+.birds_item_wrap.bird_02 .animation img.img01 {
+  position: absolute;
+  top: -38%;
+  left: -33%;
 }
 
 .birds_item .animation .video02 {
@@ -524,7 +658,7 @@ section.pageSecond::before {
 
 /* 02 */
 .birds_item_wrap.bird_02 .animation .video02 {
-  top: -20%;
+  top: -30%;
   left: -30%;
 }
 
@@ -534,10 +668,27 @@ section.pageSecond::before {
   left: -26%;
 }
 
+/* 02 */
+.birds_item_wrap.bird_02 .animation img.img02 {
+  left: -36%;
+}
+
+/* 03 */
+.birds_item_wrap.bird_03 .animation img.img02 {
+  top: -36%;
+  left: -24%;
+}
+
 .birds_item .animation img.img03 {
   position: absolute;
-  top: -20%;
-  left: -20%;
+  top: -36%;
+  left: -24%;
+}
+
+/* 02 */
+.birds_item_wrap.bird_02 .animation img.img03 {
+  top: -30%;
+  left: -33%;
 }
 
 .birds_item .animation img.img04 {
@@ -547,11 +698,23 @@ section.pageSecond::before {
   width: 100%;
 }
 
+/* 02 */
+.birds_item_wrap.bird_02 .animation img.img04 {
+  left: 10%;
+  bottom: -58%;
+}
+
 .birds_item .animation img.img05 {
   position: absolute;
   bottom: -38%;
   left: -44%;
   width: 100%;
+}
+
+/* 02 */
+.birds_item_wrap.bird_02 .animation img.img05 {
+  left: 16%;
+  bottom: -44%;
 }
 
 .birds_item .animation img.img06 {
@@ -561,11 +724,10 @@ section.pageSecond::before {
   width: 100%;
 }
 
-/* 05 */
-.birds_item_wrap.bird_02 .animation img.img05,
+/* 02 */
 .birds_item_wrap.bird_02 .animation img.img06 {
-  left: 0;
-  bottom: -40%;
+  left: 20%;
+  bottom: -48%;
 }
 
 /*  // SECTION : pageSecond  */
