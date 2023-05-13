@@ -51,8 +51,12 @@ let targetX = 0,
     targetY = 0;
 
 const speed = 0.09;
+
 const introImages = document.querySelectorAll('.bg_images.intro img');
-const animationImages = document.querySelectorAll('.animation > img')
+const animationImages = document.querySelectorAll('.animation > img');
+const BIRD01_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_01 .animation > img');
+const BIRD02_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > img');
+const BIRD02_VIDEO = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > video');
 
 window.addEventListener('mousemove', function(e){
   x = e.pageX - this.window.innerWidth / 2;
@@ -60,25 +64,41 @@ window.addEventListener('mousemove', function(e){
 });
 
 const loop = () => {
+
   targetX += (x - targetX) * speed;
   targetY += (y - targetY) * speed;
 
   introImages[1].style.transform = `translateX(${targetX / 40}px) translateY(${targetY / 60}px)`;
   introImages[2].style.transform = `translateX(${-targetX / 60}px)`;
 
-  animationImages[0].style.transform = `translateX(${targetX / 18}px) translateY(${targetY / 36}px)`;
-  animationImages[1].style.transform = `translateX(${targetX / 30}px) translateY(${targetY / 27}px)`;
-  animationImages[2].style.transform = `translateX(${targetX / 33}px) translateY(${targetY / 7}px)`;
-  animationImages[3].style.transform = `translateX(${targetX / 20}px) translateY(${targetY / 10}px)`;
-  animationImages[4].style.transform = `translateX(${targetX / 28}px) translateY(${targetY / 31}px)`;
-  animationImages[5].style.transform = `translateX(${targetX / 34}px) translateY(${targetY / 19}px)`;
+  // bird_01 images
+  BIRD01_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 33}px)`;
+  BIRD01_IMAGES[1].style.transform = `translateX(${targetX / 32}px) translateY(${-targetY / 48}px)`;
+  BIRD01_IMAGES[2].style.transform = `translateX(${-targetX / 55}px) translateY(${targetY / 36}px)`;
+  BIRD01_IMAGES[3].style.transform = `translateX(${targetX / 34}px) translateY(${-targetY / 46}px)`;
+  BIRD01_IMAGES[4].style.transform = `translateX(${-targetX / 43}px) translateY(${targetY / 65}px)`;
+  BIRD01_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
 
-
+  //bird_02 images
+  BIRD02_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 33}px)`;
+  BIRD02_IMAGES[1].style.transform = `translateX(${targetX / 32}px) translateY(${-targetY / 48}px)`;
+  BIRD02_IMAGES[2].style.transform = `translateX(${-targetX / 55}px) translateY(${targetY / 36}px)`;
+  BIRD02_IMAGES[3].style.transform = `translateX(${targetX / 34}px) translateY(${-targetY / 46}px)`;
+  BIRD02_IMAGES[4].style.transform = `translateX(${-targetX / 43}px) translateY(${targetY / 65}px)`;
+  BIRD02_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
+  
+  //bird_02 video
+  BIRD02_VIDEO[0].style.transform = `translateX(${-targetX / 56 }px) translateY(${-targetY / 76}px)`;
 
   window.requestAnimationFrame(loop);
-}
 
-console.log(animationImages);
+}
 
 loop();
 
+let randomIndexArray = [];
+for (let i = 0; i < animationImages.length * 2; i++) {
+
+  
+
+}
