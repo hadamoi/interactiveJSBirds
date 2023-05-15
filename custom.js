@@ -58,6 +58,8 @@ const BIRD01_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_01 .anima
 const BIRD02_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > img');
 const BIRD02_VIDEO = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > video');
 const BIRD03_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_03 .animation > img');
+const BIRD04_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_04 .animation > img');
+const BIRD05_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_05 .animation > img');
 
 window.addEventListener('mousemove', function(e){
   x = e.pageX - this.window.innerWidth / 2;
@@ -80,7 +82,7 @@ const loop = () => {
   BIRD01_IMAGES[4].style.transform = `translateX(${-targetX / 43}px) translateY(${targetY / 65}px)`;
   BIRD01_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
 
-  //bird_02 images
+  // bird_02 images
   BIRD02_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 33}px)`;
   BIRD02_IMAGES[1].style.transform = `translateX(${targetX / 32}px) translateY(${-targetY / 48}px)`;
   BIRD02_IMAGES[2].style.transform = `translateX(${-targetX / 55}px) translateY(${targetY / 36}px)`;
@@ -88,16 +90,29 @@ const loop = () => {
   BIRD02_IMAGES[4].style.transform = `translateX(${-targetX / 43}px) translateY(${targetY / 65}px)`;
   BIRD02_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
 
-  //bird_02 video
+  // bird_02 video
   BIRD02_VIDEO[0].style.transform = `translateX(${-targetX / 56 }px) translateY(${-targetY / 76}px)`;
 
-  //bird_02 images
+  //bird_03 images
   BIRD03_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 133}px)`;
   BIRD03_IMAGES[1].style.transform = `translateX(${targetX / 132}px) translateY(${-targetY / 148}px)`;
   BIRD03_IMAGES[2].style.transform = `translateX(${-targetX / 155}px) translateY(${targetY / 136}px)`;
   BIRD03_IMAGES[3].style.transform = `translateX(${targetX / 234}px) translateY(${-targetY / 66}px)`;
   BIRD03_IMAGES[4].style.transform = `translateX(${-targetX / 143}px) translateY(${targetY / 65}px)`;
   BIRD03_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
+
+  // bird 04 images
+  BIRD04_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 133}px)`;
+  BIRD04_IMAGES[1].style.transform = `translateX(${targetX / 132}px) translateY(${-targetY / 148}px)`;
+  BIRD04_IMAGES[2].style.transform = `translateX(${-targetX / 155}px) translateY(${targetY / 136}px)`;
+  BIRD04_IMAGES[3].style.transform = `translateX(${targetX / 234}px) translateY(${-targetY / 66}px)`;
+  BIRD04_IMAGES[4].style.transform = `translateX(${-targetX / 143}px) translateY(${targetY / 65}px)`;
+  BIRD04_IMAGES[5].style.transform = `translateX(${targetX / 75}px) translateY(${-targetY / 41}px)`;
+
+  // bird 05 images
+  BIRD05_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 133}px)`;
+  BIRD05_IMAGES[1].style.transform = `translateX(${targetX / 132}px) translateY(${-targetY / 148}px)`;
+  BIRD05_IMAGES[2].style.transform = `translateX(${-targetX / 155}px) translateY(${targetY / 136}px)`;
 
   window.requestAnimationFrame(loop);
 

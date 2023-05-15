@@ -305,7 +305,7 @@ section.pageSecond {
   background: url('images/1-4e39913a.png') center center / cover no-repeat;
   width: 100%;
   min-height: 100vh;
-
+  padding: 6% 0;
 }
 
 /* 02 */
@@ -322,6 +322,11 @@ section.pageSecond {
 /* 04 */
 .birds_item_wrap.bird_04 {
   background: url('images/4-704acf85.png') center center / cover no-repeat;
+}
+
+/* 04 */
+.birds_item_wrap.bird_05 {
+  background: url('images/5-89590a0e.png') center center / cover no-repeat;
 }
 
 .birds_item {
@@ -342,7 +347,7 @@ section.pageSecond {
   padding: 0;
 }
 
-.birds_item>div {
+.birds_item > div {
   width: 50%;
 }
 
@@ -392,6 +397,11 @@ section.pageSecond {
   color: #e0bb6d
 }
 
+/* 05 */
+.birds_item_wrap.bird_05 .description h2 {
+  color: #527920;
+}
+
 .birds_item .description h2::after {
   content: '';
   position: absolute;
@@ -416,6 +426,11 @@ section.pageSecond {
 /* 04 */
 .birds_item_wrap.bird_04 .description h2::after {
   background-color: #e0bb6d;
+}
+
+/* 04 */
+.birds_item_wrap.bird_05 .description h2::after {
+  background-color: #527920;
 }
 
 .birds_item .description p {
@@ -453,6 +468,12 @@ section.pageSecond {
   border-bottom: 1px solid #e0bb6d;
 }
 
+/* 05 */
+.birds_item_wrap.bird_05 .description .mini_table {
+  border-top: 1px solid #527920;
+  border-bottom: 1px solid #527920;
+}
+
 .birds_item .description .mini_table div:first-child {
   width: 50%;
   height: 100%;
@@ -486,12 +507,17 @@ section.pageSecond {
   background-color: #e0bb6d;
 }
 
+/* 05 */
+.birds_item_wrap.bird_05 .description .mini_table div:first-child::after {
+  background-color: #527920;
+}
+
 .birds_item .description .mini_table div:first-child img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 88%;
 }
 
 .birds_item .description .mini_table div:first-child span {
@@ -527,6 +553,11 @@ section.pageSecond {
   color: #e0bb6d;
 }
 
+/* 05 */
+.birds_item_wrap.bird_05 .description .mini_table div:first-child span {
+  color: #527920;
+}
+
 .birds_item .description .mini_table div:last-child {
   width: 50%;
   padding-left: 30px;
@@ -551,6 +582,11 @@ section.pageSecond {
 /* 04 */
 .birds_item_wrap.bird_04 .description .mini_table div:last-child p {
   color: #e0bb6d;
+}
+
+/* 05 */
+.birds_item_wrap.bird_05 .description .mini_table div:last-child p {
+  color: #527920;
 }
 
 .birds_item .animation {
@@ -601,6 +637,12 @@ section.pageSecond {
   letter-spacing: -3rem;
 }
 
+/* 05 */
+.birds_item_wrap.bird_05 .animation .fixed_image span.number {
+  top: -40%;
+  letter-spacing: -3rem;
+}
+
 .birds_item .animation .fixed_image img.bg {
   padding-top: 10%;
   transform: scale(1.2);
@@ -618,6 +660,12 @@ section.pageSecond {
 /* 03 */
 .birds_item_wrap.bird_03 .animation .fixed_image img.bg {
   padding-top: 40%;
+}
+
+/* 05 */
+.birds_item_wrap.bird_05 .animation .fixed_image img.bg {
+  padding-bottom: 40%;
+  transform: scale(1.38);
 }
 
 .birds_item .animation .fixed_image img.object {
@@ -645,8 +693,13 @@ section.pageSecond {
 
 /* 02 */
 .birds_item_wrap.bird_02 .animation img.img01 {
-  position: absolute;
   top: -38%;
+  left: -33%;
+}
+
+/* 05 */
+.birds_item_wrap.bird_05 .animation img.img01 {
+  top: -20%;
   left: -33%;
 }
 
@@ -659,6 +712,12 @@ section.pageSecond {
 /* 02 */
 .birds_item_wrap.bird_02 .animation .video02 {
   top: -30%;
+  left: -30%;
+}
+
+/* 05 */
+.birds_item_wrap.bird_05 .animation .video02 {
+  top: -22%;
   left: -30%;
 }
 
@@ -688,6 +747,12 @@ section.pageSecond {
 /* 02 */
 .birds_item_wrap.bird_02 .animation img.img03 {
   top: -30%;
+  left: -33%;
+}
+
+/* 05 */
+.birds_item_wrap.bird_05 .animation img.img03 {
+  top: -18%;
   left: -33%;
 }
 
