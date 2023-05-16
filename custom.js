@@ -54,6 +54,7 @@ const speed = 0.09;
 
 const introImages = document.querySelectorAll('.bg_images.intro img');
 const animationImages = document.querySelectorAll('.animation > img');
+let totalNumber = animationImages.length;
 const BIRD01_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_01 .animation > img');
 const BIRD02_IMAGES = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > img');
 const BIRD02_VIDEO = document.querySelectorAll('.birds_item_wrap.bird_02 .animation > video');
@@ -73,6 +74,11 @@ const loop = () => {
 
   introImages[1].style.transform = `translateX(${targetX / 40}px) translateY(${targetY / 60}px)`;
   introImages[2].style.transform = `translateX(${-targetX / 60}px)`;
+
+  // 0516 
+  // animationImages.forEach((image, index) => {
+  //   image.style.transform = `translateX(${targetX / - (totalNumber + index)}px) translateY(${ targetY / (totalNumber + index)}px)`;
+  // })
 
   // bird_01 images
   BIRD01_IMAGES[0].style.transform = `translateX(${-targetX / 64}px) translateY(${targetY / 33}px)`;
