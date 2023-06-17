@@ -1,4 +1,4 @@
-# 🕊️ Mousemove Ver.2
+# 🕊️ Mousemove ver.2
 This is about events that are affected by the user's mouse behavior. <br />
 As you move the mouse, the image of the bird moves in the opposite direction of your mouse movement. <br />
 You can also see the different features of the header.
